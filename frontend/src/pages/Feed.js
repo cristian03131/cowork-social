@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react'; //Se importa useState
 import PostCard from '../components/PostCard';
+import CreatePostModal from '../components/CreatePostModal'; // Se importa el nuevo componente
 import './Feed.css';
 
 /**
@@ -10,6 +11,8 @@ import './Feed.css';
  * TODO: FE-06 - Agregar modal para crear publicaciones
  */
 const Feed = () => {
+  //Se crea el estado para controlar la visibilidad del modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
   // Mock data - en producción vendría de la API
   const mockPosts = [
     {
@@ -44,7 +47,9 @@ const Feed = () => {
         <div className="feed-container">
           <div className="feed-header">
             <h2>Feed de Publicaciones</h2>
-            <button className="btn btn-primary">
+            <button className="btn btn-primary"
+             onClick={() => setIsModalOpen(true)}
+            >
               ✏️ Nueva Publicación
             </button>
           </div>
@@ -60,6 +65,11 @@ const Feed = () => {
           </div>
         </div>
       </div>
+      {/* Se renderiza el modal y le pasamos las props necesarias */}
+      <CreatePostModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </div>
   );
 };

@@ -1,9 +1,14 @@
+/* NAVBAR COMPONENT
+ * Se utilizan variables CSS para garantizar la consistencia visual entre Modo Claro/Oscuro.
+ */
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
+  /* Uso de variables dinámicas definidas en :root para reactividad de tema */
   background: var(--bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -32,10 +37,13 @@
   gap: 30px;
   margin: 0;
   padding: 0;
+  /* Alineación vertical para sincronizar enlaces con el botón de tema */
+  align-items: center;
 }
 
 .navbar-menu a {
   text-decoration: none;
+  /* El color del texto cambia automáticamente según el atributo [data-theme] */
   color: var(--text-color);
   font-weight: 500;
   transition: color 0.2s;
@@ -45,6 +53,7 @@
   color: #1877f2;
 }
 
+/* BOTÓN DE TOGGLE DE TEMA */
 .theme-toggle-btn {
   background: none;
   border: none;
@@ -58,6 +67,7 @@
   transition: background 0.3s ease, transform 0.2s;
 }
 
+/* Uso de color RGBA para que el hover sea sutil en ambos fondos */
 .theme-toggle-btn:hover {
   background-color: rgba(128, 128, 128, 0.2);
   transform: scale(1.1); /* Un pequeño efecto de aumento al pasar el mouse */

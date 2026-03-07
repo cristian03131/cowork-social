@@ -8,6 +8,7 @@ import './Navbar.css';
  * TODO: FE-05 - Mejorar responsive con menú hamburguesa en mobile
  */
 const Navbar = () => {
+  // Desestructuramos el estado actual (theme) y la función para cambiarlo (toggleTheme)
   const { theme, toggleTheme } = useTheme();
   return (
     <nav className="navbar">
@@ -21,6 +22,7 @@ const Navbar = () => {
           <li><Link to="/profile/me">Perfil</Link></li>
           <li><Link to="/login">Login</Link></li>
           <li>
+            {/* Botón de cambio de tema: Alterna entre iconos según el estado actual */}
             <button 
               onClick={toggleTheme} 
               className="theme-toggle-btn"

@@ -17,6 +17,7 @@
 
 .feed-header h2 {
   margin: 0;
+  /* Adaptación dinámica del título al tema actual */
   color: var(--text-color);
 }
 
@@ -28,6 +29,7 @@
 .feed-loader {
   text-align: center;
   padding: 30px;
+  /* Color adaptativo con opacidad para un estado de carga sutil */
   color: var(--text-color);
   opacity: 0.6;
 }

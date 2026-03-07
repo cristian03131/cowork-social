@@ -2,6 +2,7 @@
   min-height: 100vh;
 }
 
+/* Hero Section: Se mantiene estática con gradientes para conservar el branding */
 .hero-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -26,6 +27,7 @@
   justify-content: center;
 }
 
+/* Features Section: Adaptación dinámica de textos y fondos */
 .features-section {
   padding: 80px 0;
   background: var(--bg-color);
@@ -35,6 +37,7 @@
   text-align: center;
   font-size: 36px;
   margin-bottom: 50px;
+  /* El color del título cambia según el tema (Claro/Oscuro) */
   color: var(--text-color);
 }
 
@@ -42,6 +45,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  
 }
 
 .feature-card {
@@ -60,11 +64,13 @@
 }
 
 .feature-card p {
+  /* Se usa opacidad para jerarquía visual sin perder legibilidad en modo oscuro */
   color: var(--text-color);
   opacity: 0.8;
   line-height: 1.5;
 }
 
+/* Call to Action: Uso de la variable de tarjeta para diferenciar secciones */
 .cta-section {
   padding: 80px 0;
   background: var(--bg-card);

@@ -19,6 +19,7 @@
 .login-card h2 {
   text-align: center;
   margin-bottom: 10px;
+  /* Adaptación del título al tema activo */
   color: var(--text-color);
 }
 
@@ -49,6 +50,8 @@
 
 .form-group input {
   padding: 12px;
+  /* El borde y el fondo del input ahora son dinámicos para evitar 
+     el deslumbramiento en modo oscuro */
   border: 1px solid var(--btn-secondary-bg);
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -94,9 +97,11 @@
   margin-top: 10px;
 }
 
+/* FOOTER DEL FORMULARIO */
 .login-footer {
   margin-top: 30px;
   padding-top: 20px;
+  /* Separador dinámico que utiliza la variable de fondo secundario */
   border-top: 1px solid var(--btn-secondary-bg); 
   text-align: center;
 }

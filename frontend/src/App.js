@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Feed from './pages/Feed';
 import NotFound from './pages/NotFound';
+import Search from './pages/Search'; 
 
 // Components
 import Navbar from './components/Navbar';
@@ -24,6 +25,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/feed" element={<Feed />} />
+            <Route path="/search" element={<Search />} />
             <Route path="/profile/:userId" element={<Profile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

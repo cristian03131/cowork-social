@@ -13,7 +13,7 @@ const Search = () => {
 
   return (
     <div className="search-page">
-      <h2>🔍 Buscador de Usuarios</h2>
+      <h2>Buscador de Usuarios 🔍 </h2>
       
       <div className="search-container">
         <input

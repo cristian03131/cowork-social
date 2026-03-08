@@ -1,19 +1,23 @@
 .search-page {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 10px; /* Reducimos padding en mobile */
+  width: 100%;
+  overflow-x: hidden; /* Evita el scroll horizontal fantasma */
 }
 
 .search-page h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #fff;
+  /* Usamos una transición suave para el cambio de color */
+  transition: color 0.3s ease;
 }
 
 .search-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Esto lo centra horizontalmente */
+  align-items: center;
   margin-bottom: 40px;
+  width: 100%;
+  padding: 0 20px; /* Evita que toque los bordes en mobile */
 }
 
 .search-input {

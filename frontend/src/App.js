@@ -3,17 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 // Pages
-import Home from './cristian-landeira/pages/Home';
-import Login from './cristian-landeira/pages/Login';
-import Register from './cristian-landeira/pages/Register';
-import Profile from './cristian-landeira/pages/Profile';
-import Feed from './cristian-landeira/pages/Feed';
-import Search from './cristian-landeira/pages/Search';
-import NotFound from './cristian-landeira/pages/NotFound';
-
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Profile from './pages/Profile';
+import Feed from './pages/Feed';
+import NotFound from './pages/NotFound';
 
 // Components
-import Navbar from './cristian-landeira/components/Navbar';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -26,7 +24,6 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/feed" element={<Feed />} />
-            <Route path="/search" element={<Search />} />
             <Route path="/profile/:userId" element={<Profile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
